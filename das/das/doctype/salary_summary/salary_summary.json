@@ -1,0 +1,292 @@
+{
+ "autoname": "field:month",
+ "creation": "2019-08-06 11:40:32.304465",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "staff",
+  "no_of_staff_cur_mon",
+  "no_of_staff_prev_mon",
+  "gross_salary_column",
+  "gross_salary",
+  "current_month",
+  "previous_month",
+  "net_salary_column",
+  "net_salary",
+  "current_month_net",
+  "previous_month_net",
+  "section_break_12",
+  "staff_ot",
+  "column_break_14",
+  "gross_salary_staff_ot",
+  "current_month_staff_ot",
+  "previous_month_staff_ot",
+  "column_break_18",
+  "net_salary_staff_ot",
+  "current_month_net_ot",
+  "previous_month_net_ot",
+  "section_break_22",
+  "operating_engineer",
+  "cur_mon_oe",
+  "pre_mon_oe",
+  "column_break_27",
+  "gross_oe",
+  "cur_gross_oe",
+  "pre_gross_oe",
+  "column_break_31",
+  "net_oe",
+  "cur_net_oe",
+  "pre_net_oe",
+  "section_break_35",
+  "operating_engineer_ot",
+  "column_break_37",
+  "gross_oe_ot",
+  "cur_gross_oe_ot",
+  "pre_gross_oe_ot",
+  "column_break_41",
+  "net_oe_ot",
+  "cur_net_oe_ot",
+  "pre_net_oe_ot",
+  "section_break_45"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff",
+   "fieldtype": "Heading",
+   "label": "Staff"
+  },
+  {
+   "fieldname": "no_of_staff_cur_mon",
+   "fieldtype": "Data",
+   "label": "No of staff Current Month"
+  },
+  {
+   "fieldname": "no_of_staff_prev_mon",
+   "fieldtype": "Data",
+   "label": "No of staff previous Month"
+  },
+  {
+   "fieldname": "gross_salary_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_month",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "previous_month",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "net_salary_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_month_net",
+   "fieldtype": "Data",
+   "label": "Current Month net "
+  },
+  {
+   "fieldname": "previous_month_net",
+   "fieldtype": "Data",
+   "label": "Previous Month net"
+  },
+  {
+   "fieldname": "gross_salary",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "net_salary",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "staff_ot",
+   "fieldtype": "Heading",
+   "label": "Staff OT"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_salary_staff_ot",
+   "fieldtype": "Heading",
+   "label": "Gross Salary "
+  },
+  {
+   "fieldname": "current_month_staff_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "previous_month_staff_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_salary_staff_ot",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "current_month_net_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "previous_month_net_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "Month",
+   "unique": 1
+  },
+  {
+   "fieldname": "operating_engineer",
+   "fieldtype": "Heading",
+   "label": "Operating Engineer"
+  },
+  {
+   "fieldname": "cur_mon_oe",
+   "fieldtype": "Data",
+   "label": "No of OE Current Month"
+  },
+  {
+   "fieldname": "pre_mon_oe",
+   "fieldtype": "Data",
+   "label": "No of OE Previous Month"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_oe",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "cur_gross_oe",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_gross_oe",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_oe",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_oe",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_oe",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operating_engineer_ot",
+   "fieldtype": "Heading",
+   "label": "Operating Engineer OT"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_oe_ot",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "cur_gross_oe_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_gross_oe_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_oe_ot",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_oe_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_oe_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-08-08 22:36:25.590756",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Salary Summary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

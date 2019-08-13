@@ -1,0 +1,48 @@
+{
+ "autoname": "field:feedback",
+ "creation": "2019-08-08 13:00:29.982834",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "feedback",
+  "link_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Feedback ",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "link_2",
+   "fieldtype": "Table",
+   "options": "Rating"
+  }
+ ],
+ "modified": "2019-08-08 16:17:16.106287",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Feedback Rating",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

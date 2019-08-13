@@ -1,0 +1,443 @@
+{
+ "autoname": "TF.####",
+ "creation": "2019-08-07 10:17:16.816726",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name2",
+  "employee_name",
+  "department",
+  "des",
+  "topic",
+  "column_break_8",
+  "train_type",
+  "no_of_hours",
+  "acceptance",
+  "hod_name",
+  "designation",
+  "course_content",
+  "cont1",
+  "acc1",
+  "cont2",
+  "acc2",
+  "cont3",
+  "acc3",
+  "column_break_16",
+  "cont4",
+  "acc4",
+  "cont5",
+  "acc5",
+  "course_execution_section",
+  "exe1",
+  "acce1",
+  "exe2",
+  "acce2",
+  "exe3",
+  "acce3",
+  "column_break_28",
+  "exe4",
+  "acce4",
+  "exe5",
+  "acce5",
+  "outcomes_section",
+  "out1",
+  "acco1",
+  "column_break_36",
+  "out2",
+  "acco2",
+  "column_break_39",
+  "out3",
+  "acco3",
+  "comments",
+  "comm1",
+  "comm2",
+  "comm3",
+  "comm3a",
+  "comm3b",
+  "comm4",
+  "personal_action_plan_section",
+  "personal",
+  "small_text_51",
+  "date",
+  "feedback1",
+  "training_date",
+  "column_break_55",
+  "evaluation_date",
+  "rating",
+  "rating_des",
+  "table_58",
+  "section_break_60",
+  "suggestion",
+  "column_break_61",
+  "suggestion1"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "des",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "topic",
+   "fieldtype": "Data",
+   "label": "Topic",
+   "read_only": 1
+  },
+  {
+   "fieldname": "train_type",
+   "fieldtype": "Select",
+   "label": "Training Type",
+   "options": "Internal\nExternal"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_hours",
+   "fieldtype": "Time",
+   "label": "No of hours"
+  },
+  {
+   "fieldname": "acceptance",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "course_content",
+   "fieldtype": "Section Break",
+   "label": "Course Content"
+  },
+  {
+   "fieldname": "cont1",
+   "fieldtype": "HTML",
+   "options": "1. The course content met my key learning objective from this course."
+  },
+  {
+   "fieldname": "cont2",
+   "fieldtype": "HTML",
+   "options": "2. The course content was simple and easy to understand\t\t\t\n\n"
+  },
+  {
+   "fieldname": "cont3",
+   "fieldtype": "HTML",
+   "options": "3. I found the contents to be relevant to my work\t\t\t\n"
+  },
+  {
+   "fieldname": "cont4",
+   "fieldtype": "HTML",
+   "options": "4. The visual aids(images/graphs/pic/video/ppt)used were very useful\t\t\t\n"
+  },
+  {
+   "fieldname": "cont5",
+   "fieldtype": "HTML",
+   "options": "5. The course content is well organized\t\t\t\n"
+  },
+  {
+   "fieldname": "acc1",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acc2",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acc3",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acc4",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acc5",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "course_execution_section",
+   "fieldtype": "Section Break",
+   "label": "Course Execution"
+  },
+  {
+   "fieldname": "exe1",
+   "fieldtype": "HTML",
+   "options": "1. Your interest was kept at a high level throughout the training \t\t\t\n"
+  },
+  {
+   "fieldname": "acce1",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "exe2",
+   "fieldtype": "HTML",
+   "options": "2. The activities and examples given were very useful in understanding the course content\t\t\t\t\t\t\n"
+  },
+  {
+   "fieldname": "acce2",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "exe3",
+   "fieldtype": "HTML",
+   "options": "3. The group activities provided a good opportunity to learn from other colleagues\t\t\t\t\t\t\t\t\n"
+  },
+  {
+   "fieldname": "acce3",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "exe4",
+   "fieldtype": "HTML",
+   "options": "4. Your view on the duration of the training program\t\n"
+  },
+  {
+   "fieldname": "acce4",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "exe5",
+   "fieldtype": "HTML",
+   "options": "5. How do you rate the trainer as overall\t\t\n"
+  },
+  {
+   "fieldname": "acce5",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outcomes_section",
+   "fieldtype": "Section Break",
+   "label": "Outcomes"
+  },
+  {
+   "fieldname": "out1",
+   "fieldtype": "HTML",
+   "options": "1. I feel will be able the learning from this course to my work\t\t\t\n"
+  },
+  {
+   "fieldname": "acco1",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "out2",
+   "fieldtype": "HTML",
+   "options": "2. I feel I have completed an important professional development course that will help me in my furture career\t\n"
+  },
+  {
+   "fieldname": "acco2",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "out3",
+   "fieldtype": "HTML",
+   "options": "3. I feel that the time I have invested in the course have been worthwhile\t\t\t\t\t\t\n"
+  },
+  {
+   "fieldname": "acco3",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Section Break",
+   "label": "PLEASE FEEL FREE TO MAKE ANY OTHER COMMENTS"
+  },
+  {
+   "fieldname": "comm1",
+   "fieldtype": "Small Text",
+   "label": "1. What was your general view of this course ?"
+  },
+  {
+   "fieldname": "comm2",
+   "fieldtype": "Small Text",
+   "label": "2. What specific things wil you do in your work area as a result of attending this course ?"
+  },
+  {
+   "fieldname": "comm3",
+   "fieldtype": "Small Text",
+   "label": "3. What  improvements would you suggest for the course ?"
+  },
+  {
+   "fieldname": "comm3a",
+   "fieldtype": "Small Text",
+   "label": "3a) What is your view about the faculty on training ?"
+  },
+  {
+   "fieldname": "comm3b",
+   "fieldtype": "Select",
+   "label": "3b) What is your view on duration of the training ?",
+   "options": "Too Long\nToo short\nPerfect as per course contents"
+  },
+  {
+   "fieldname": "comm4",
+   "fieldtype": "Small Text",
+   "label": "4. Did the trainer made you comfortable and encouraged your participation throughout the session ?"
+  },
+  {
+   "fieldname": "personal_action_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Action Plan"
+  },
+  {
+   "fieldname": "personal",
+   "fieldtype": "HTML",
+   "options": "Three things(skills leading to development of compentencies) I have learnt from this program that i would like to implement in my day to day activities with in 30days.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n"
+  },
+  {
+   "fieldname": "small_text_51",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "training_date",
+   "fieldtype": "Date",
+   "label": "Training Date"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "evaluation_date",
+   "fieldtype": "Date",
+   "label": "Evaluation Date"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Section Break",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "table_58",
+   "fieldtype": "Table",
+   "options": "Rating"
+  },
+  {
+   "fieldname": "rating_des",
+   "fieldtype": "HTML",
+   "options": "(1-Strongly disagree, 2-Disagree, 3-Neither agree nor disagree, 4-Agree, 5-Strongly Agree, N/A-Not applicable)\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n"
+  },
+  {
+   "fieldname": "suggestion",
+   "fieldtype": "Small Text",
+   "label": "Suggestion"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "suggestion1",
+   "fieldtype": "Small Text",
+   "label": "Suggestion"
+  },
+  {
+   "fieldname": "section_break_60",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name2",
+   "fieldtype": "Link",
+   "label": "Employee Number",
+   "options": "Employee",
+   "unique": 1
+  },
+  {
+   "fieldname": "feedback1",
+   "fieldtype": "Section Break",
+   "label": "Training Effectiveness Feedback(after 30 days)"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "hod_name",
+   "fieldtype": "Data",
+   "label": "HOD Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  }
+ ],
+ "modified": "2019-08-08 18:20:44.112763",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Training and feedback form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name",
+ "track_changes": 1
+}

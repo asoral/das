@@ -1,0 +1,49 @@
+{
+ "creation": "2019-08-07 12:35:59.211448",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "training",
+  "emp_rating",
+  "hod_rating",
+  "hod_rem"
+ ],
+ "fields": [
+  {
+   "fieldname": "training",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Training Effectiveness"
+  },
+  {
+   "fieldname": "emp_rating",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "EMP Rating"
+  },
+  {
+   "fieldname": "hod_rating",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "HOD Rating"
+  },
+  {
+   "fieldname": "hod_rem",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "HOD Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-08-08 16:36:55.597698",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Rating",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
