@@ -1,0 +1,53 @@
+{
+ "creation": "2019-08-25 22:50:28.145659",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "earnings",
+  "column_break_2",
+  "actual",
+  "column_break_4",
+  "earnings1"
+ ],
+ "fields": [
+  {
+   "fieldname": "earnings",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Earnings",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Actuals"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "earnings1",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Earnings"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-08-25 22:50:28.145659",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Last Month Earnings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
