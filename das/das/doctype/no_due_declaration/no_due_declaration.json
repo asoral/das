@@ -1,0 +1,473 @@
+{
+ "autoname": "NDD.####",
+ "creation": "2019-08-19 10:24:28.240511",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "date_of_joining",
+  "column_break_4",
+  "date",
+  "designation",
+  "department",
+  "relieving_date",
+  "section_break_9",
+  "department1",
+  "column_break_11",
+  "due",
+  "column_break_13",
+  "remarks",
+  "section_break_15",
+  "it__systems",
+  "column_break_17",
+  "due1",
+  "column_break_19",
+  "remarks1",
+  "section_break_21",
+  "quality",
+  "column_break_23",
+  "due2",
+  "column_break_25",
+  "remarks2",
+  "section_break_27",
+  "ed_coating",
+  "column_break_29",
+  "due3",
+  "column_break_31",
+  "remarks3",
+  "section_break_33",
+  "production",
+  "column_break_35",
+  "due4",
+  "column_break_37",
+  "remarks4",
+  "section_break_39",
+  "plant_maintenance",
+  "column_break_41",
+  "due5",
+  "column_break_43",
+  "remarks5",
+  "section_break_45",
+  "ppc",
+  "column_break_47",
+  "due6",
+  "column_break_49",
+  "remarks6",
+  "section_break_51",
+  "marketing__sales",
+  "column_break_53",
+  "due7",
+  "column_break_55",
+  "remarks7",
+  "section_break_57",
+  "finance__and_accounts",
+  "column_break_59",
+  "due8",
+  "column_break_61",
+  "remarks8",
+  "section_break_63",
+  "industrial_engineering",
+  "column_break_65",
+  "due9",
+  "column_break_67",
+  "remarks9",
+  "section_break_69",
+  "hr",
+  "column_break_71",
+  "due10",
+  "column_break_73",
+  "remarks10",
+  "section_break_75",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Read Only",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Read Only",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "employee.relieving_date",
+   "fieldname": "relieving_date",
+   "fieldtype": "Date",
+   "label": "Relieving Date"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees) ",
+   "fieldname": "due",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due1",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks1",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due2",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks2",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due3",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks3",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "department1",
+   "fieldtype": "Heading",
+   "label": "Purchase / Materials / Stores"
+  },
+  {
+   "fieldname": "it__systems",
+   "fieldtype": "Heading",
+   "label": "IT  Systems"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Heading",
+   "label": "Quality "
+  },
+  {
+   "fieldname": "ed_coating",
+   "fieldtype": "Heading",
+   "label": "ED Coating"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "production",
+   "fieldtype": "Heading",
+   "label": "Production"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due4",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks4",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plant_maintenance",
+   "fieldtype": "Heading",
+   "label": "Plant Maintenance"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due5",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks5",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ppc",
+   "fieldtype": "Heading",
+   "label": "PPC"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due6",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks6",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_51",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "marketing__sales",
+   "fieldtype": "Heading",
+   "label": "Marketing / Sales"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due7",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks7",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_57",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "finance__and_accounts",
+   "fieldtype": "Heading",
+   "label": "Finance  and Accounts"
+  },
+  {
+   "fieldname": "column_break_59",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due8",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks8",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_63",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "industrial_engineering",
+   "fieldtype": "Heading",
+   "label": "Industrial Engineering"
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due9",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks9",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_69",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hr",
+   "fieldtype": "Heading",
+   "label": "HR"
+  },
+  {
+   "fieldname": "column_break_71",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(In Rupees)",
+   "fieldname": "due10",
+   "fieldtype": "Currency",
+   "label": "Due"
+  },
+  {
+   "fieldname": "column_break_73",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks10",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_75",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Read Only",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Number",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  }
+ ],
+ "modified": "2019-08-21 10:42:28.620064",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "No Due Declaration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

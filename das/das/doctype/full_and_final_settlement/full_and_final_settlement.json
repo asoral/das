@@ -1,0 +1,329 @@
+{
+ "autoname": "FFS.####",
+ "creation": "2019-08-19 19:27:22.790514",
+ "description": "Days\nYrs",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "name_employee",
+  "designation",
+  "department",
+  "date_of_joining",
+  "date_of_resignation",
+  "date_of_last_working_d",
+  "section_break_7",
+  "gross_salary_pm",
+  "conveyance_allow_pm",
+  "earned_leaves_balance",
+  "gratuity_eligibility",
+  "company_wd_relieving_date",
+  "payable_days_relieving_month",
+  "section_break_14",
+  "last_month_earnings",
+  "column_break_16",
+  "last_month_deduction",
+  "section_break_18",
+  "net_salary_payable",
+  "leave_encashment",
+  "medical_reimbursement",
+  "bonus",
+  "petrol_conveyance",
+  "gratuity_eligibility1",
+  "total_earnings",
+  "section_break_26",
+  "net_deduction",
+  "tds",
+  "lwf",
+  "professional_tax",
+  "loan_from_company",
+  "total_deduction",
+  "section_break_33",
+  "total_amount_to_be__paid",
+  "column_break_35",
+  "rupees_in_words",
+  "for_accounts__department_only_section",
+  "payment_vide_cheque_no",
+  "date_of_payment",
+  "column_break_39",
+  "name_of_bank",
+  "date1",
+  "section_break_42",
+  "confirm_no_dues",
+  "column_break_45",
+  "prepared_by",
+  "column_break_46",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Number",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "name_employee",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Read Only",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Read Only",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Read Only",
+   "label": "Date Of Joining"
+  },
+  {
+   "fieldname": "date_of_resignation",
+   "fieldtype": "Date",
+   "label": "Date Of Resignation"
+  },
+  {
+   "fetch_from": "employee.relieving_date",
+   "fieldname": "date_of_last_working_d",
+   "fieldtype": "Date",
+   "label": "Date Of Last Working Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_salary_pm",
+   "fieldtype": "Currency",
+   "label": "Gross Salary P.M"
+  },
+  {
+   "fieldname": "conveyance_allow_pm",
+   "fieldtype": "Currency",
+   "label": "Conveyance Allow P.M"
+  },
+  {
+   "fieldname": "earned_leaves_balance",
+   "fieldtype": "Int",
+   "label": "Earned Leaves Balance"
+  },
+  {
+   "fieldname": "gratuity_eligibility",
+   "fieldtype": "Int",
+   "label": "Gratuity Eligibility"
+  },
+  {
+   "fieldname": "company_wd_relieving_date",
+   "fieldtype": "Float",
+   "label": "Company Working Days for The Relieving Month"
+  },
+  {
+   "fieldname": "payable_days_relieving_month",
+   "fieldtype": "Float",
+   "label": "Payable Days For Relieving Month"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "last_month_earnings",
+   "fieldtype": "Table",
+   "label": "Earning for the Last Month",
+   "options": "Last Month Earning"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_month_deduction",
+   "fieldtype": "Table",
+   "label": "Deductions for the Last Month",
+   "options": "Last Month Deduction"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "net_salary_payable",
+   "fieldtype": "Currency",
+   "label": "Net Salary Payable"
+  },
+  {
+   "fieldname": "leave_encashment",
+   "fieldtype": "Currency",
+   "label": "Leave Encashment"
+  },
+  {
+   "fieldname": "medical_reimbursement",
+   "fieldtype": "Currency",
+   "label": "Medical Reimbursement"
+  },
+  {
+   "fieldname": "bonus",
+   "fieldtype": "Currency",
+   "label": "Bonus"
+  },
+  {
+   "fieldname": "petrol_conveyance",
+   "fieldtype": "Currency",
+   "label": "Petrol Conveyance"
+  },
+  {
+   "fieldname": "gratuity_eligibility1",
+   "fieldtype": "Currency",
+   "label": "Gratuity Eligibility"
+  },
+  {
+   "fieldname": "total_earnings",
+   "fieldtype": "Currency",
+   "label": "Total Earnings"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_deduction",
+   "fieldtype": "Currency",
+   "label": "Net Deduction"
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Currency",
+   "label": "TDS"
+  },
+  {
+   "fieldname": "lwf",
+   "fieldtype": "Currency",
+   "label": "LWF"
+  },
+  {
+   "fieldname": "professional_tax",
+   "fieldtype": "Currency",
+   "label": "Professional Tax"
+  },
+  {
+   "fieldname": "loan_from_company",
+   "fieldtype": "Currency",
+   "label": "Loan From Company"
+  },
+  {
+   "fieldname": "total_deduction",
+   "fieldtype": "Currency",
+   "label": "Total Deduction"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount_to_be__paid",
+   "fieldtype": "Currency",
+   "label": "Total Amount To Be  Paid"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rupees_in_words",
+   "fieldtype": "Read Only",
+   "label": "Rupees In Words"
+  },
+  {
+   "fieldname": "for_accounts__department_only_section",
+   "fieldtype": "Section Break",
+   "label": "For Accounts  Department Only"
+  },
+  {
+   "fieldname": "payment_vide_cheque_no",
+   "fieldtype": "Data",
+   "label": "Payment vide Cheque No."
+  },
+  {
+   "fieldname": "date_of_payment",
+   "fieldtype": "Data",
+   "label": "Date of Payment        "
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_bank",
+   "fieldtype": "Data",
+   "label": "Name Of Bank"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "confirm_no_dues",
+   "fieldtype": "Select",
+   "label": "No dues Clearance done from all Department:",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By "
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  }
+ ],
+ "modified": "2019-08-23 18:36:13.178966",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Full and Final Settlement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,282 @@
+{
+ "autoname": "FF.####",
+ "creation": "2019-08-22 11:08:06.764126",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "name1",
+  "trainer_name",
+  "title_of_training",
+  "column_break_4",
+  "date",
+  "department",
+  "section_break_7",
+  "inst",
+  "section_break_9",
+  "html_8",
+  "acce",
+  "html_10",
+  "acce1",
+  "html_12",
+  "acce2",
+  "html_14",
+  "acce3",
+  "html_16",
+  "acce4",
+  "html_18",
+  "acce5",
+  "column_break_20",
+  "html_20",
+  "acce6",
+  "html_22",
+  "acce7",
+  "html_24",
+  "acce8",
+  "html_26",
+  "acce9",
+  "html_28",
+  "acce10",
+  "section_break_31",
+  "comm1",
+  "comm2",
+  "comm3",
+  "comm4",
+  "section_break_36",
+  "comm5"
+ ],
+ "fields": [
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "label": "Trainer Name"
+  },
+  {
+   "fieldname": "title_of_training",
+   "fieldtype": "Data",
+   "label": "Title of training"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_8",
+   "fieldtype": "HTML",
+   "options": "1.The objectives of the training were clearly defined.\t\t\t\n"
+  },
+  {
+   "fieldname": "html_10",
+   "fieldtype": "HTML",
+   "options": "2.Participation and interaction were encouraged.\t\t\t\n"
+  },
+  {
+   "fieldname": "html_12",
+   "fieldtype": "HTML",
+   "options": "3.The topics covered were relevant to me. \t\t\t\n"
+  },
+  {
+   "fieldname": "html_14",
+   "fieldtype": "HTML",
+   "options": "4.The content was organized and easy to follow. \t\t\t\n"
+  },
+  {
+   "fieldname": "html_16",
+   "fieldtype": "HTML",
+   "options": "5.The materials distributed were helpful.\t\t\t\n"
+  },
+  {
+   "fieldname": "html_18",
+   "fieldtype": "HTML",
+   "options": "6.This training experience will be useful in my work\t\t\t\n"
+  },
+  {
+   "fieldname": "html_20",
+   "fieldtype": "HTML",
+   "options": "7.The trainer was knowledgeable about the training topics.\t\t\t\n"
+  },
+  {
+   "fieldname": "html_22",
+   "fieldtype": "HTML",
+   "options": "8.The trainer was well prepared.\t\t\t\n"
+  },
+  {
+   "fieldname": "html_24",
+   "fieldtype": "HTML",
+   "options": "9.The training objectives were met.\t\t\t\n"
+  },
+  {
+   "fieldname": "html_26",
+   "fieldtype": "HTML",
+   "options": "10.The time allotted for the training was sufficient. \t\t\t\n"
+  },
+  {
+   "fieldname": "html_28",
+   "fieldtype": "HTML",
+   "options": "11.The meeting room and fadequate and comfortable. \t\t\t\n"
+  },
+  {
+   "fieldname": "acce",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce1",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce2",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce3",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce4",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce5",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce6",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce7",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce8",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce9",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "acce10",
+   "fieldtype": "Select",
+   "label": "Acceptance",
+   "options": "\nStrongly Agree\nAgree\nNeutral\nDisagree\nStrongly disagree"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comm1",
+   "fieldtype": "Small Text",
+   "label": "1.What did you like most about this training?"
+  },
+  {
+   "fieldname": "comm2",
+   "fieldtype": "Small Text",
+   "label": "2.What aspects of the training could be improved?"
+  },
+  {
+   "fieldname": "comm3",
+   "fieldtype": "Small Text",
+   "label": "3.How do you hope to change your practice as a result of this training?"
+  },
+  {
+   "fieldname": "comm4",
+   "fieldtype": "Small Text",
+   "label": "4.What type of trainings would you like to have in the future?"
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comm5",
+   "fieldtype": "Small Text",
+   "label": "Please share your comments or suggestions  here:"
+  },
+  {
+   "fieldname": "inst",
+   "fieldtype": "HTML",
+   "options": "Instructions: Please  indicate  your  level  of  agree  the statements  listed  below  :"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Number",
+   "options": "Employee"
+  }
+ ],
+ "modified": "2019-08-22 15:43:35.145545",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Feedback Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
