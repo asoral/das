@@ -25,14 +25,17 @@
   "column_break_16",
   "last_month_deduction",
   "section_break_18",
+  "gross_actual_total",
+  "gross_earned_total",
   "net_salary_payable",
   "leave_encashment",
+  "gratuity_eligibility1",
   "medical_reimbursement",
   "bonus",
   "petrol_conveyance",
-  "gratuity_eligibility1",
   "total_earnings",
   "section_break_26",
+  "gross_deduction_total",
   "net_deduction",
   "tds",
   "lwf",
@@ -98,8 +101,7 @@
    "fetch_from": "employee.relieving_date",
    "fieldname": "date_of_last_working_d",
    "fieldtype": "Date",
-   "label": "Date Of Last Working Day",
-   "read_only": 1
+   "label": "Date Of Last Working Day"
   },
   {
    "fieldname": "section_break_7",
@@ -127,12 +129,12 @@
   },
   {
    "fieldname": "company_wd_relieving_date",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "Company Working Days for The Relieving Month"
   },
   {
    "fieldname": "payable_days_relieving_month",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "label": "Payable Days For Relieving Month"
   },
   {
@@ -148,12 +150,6 @@
   {
    "fieldname": "column_break_16",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "last_month_deduction",
-   "fieldtype": "Table",
-   "label": "Deductions for the Last Month",
-   "options": "Last Month Deduction"
   },
   {
    "fieldname": "section_break_18",
@@ -302,9 +298,30 @@
    "fieldname": "checked_by",
    "fieldtype": "Data",
    "label": "Checked By"
+  },
+  {
+   "fieldname": "last_month_deduction",
+   "fieldtype": "Table",
+   "label": "Deduction for Last Month",
+   "options": "Last Month Deduction"
+  },
+  {
+   "fieldname": "gross_deduction_total",
+   "fieldtype": "Currency",
+   "label": "Gross Deduction Total"
+  },
+  {
+   "fieldname": "gross_actual_total",
+   "fieldtype": "Currency",
+   "label": "Gross Actual Total"
+  },
+  {
+   "fieldname": "gross_earned_total",
+   "fieldtype": "Currency",
+   "label": " Gross Earned Total"
   }
  ],
- "modified": "2019-08-23 18:36:13.178966",
+ "modified": "2019-08-29 15:22:21.803350",
  "modified_by": "Administrator",
  "module": "DAS",
  "name": "Full and Final Settlement",

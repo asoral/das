@@ -6,9 +6,12 @@ def get_data():
 	return [
 		{
 			"module_name": "DAS",
-			"color": "blue",
+			# "category": "Modules",
+			"label": _("DAS"),
+			"color": "#1abc9c",
 			"icon": "octicon octicon-organization",
 			"type": "module",
-			"label": _("DAS")
+			"description": "DAS Specific Requirements",
+			
 		}
 	]

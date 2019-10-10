@@ -1,4 +1,5 @@
 {
+ "autoname": "MR.####",
  "creation": "2019-08-21 14:47:43.055390",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -76,7 +77,7 @@
   {
    "depends_on": "from_time - to_time",
    "fieldname": "total_permission_hour",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Total Permission Hour"
   },
   {
@@ -104,12 +105,14 @@
    "fieldname": "approver",
    "fieldtype": "Link",
    "label": "Approver",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "approver_name",
    "fieldtype": "Read Only",
-   "label": "Approver Name"
+   "label": "Approver Name",
+   "reqd": 1
   },
   {
    "fetch_from": "employee.department",
@@ -170,7 +173,11 @@
    "reqd": 1
   }
  ],
+<<<<<<< edc69c85ab0008713a52b3a68fab3e40ea37c7d2
  "modified": "2019-09-27 11:48:07.402823",
+=======
+ "modified": "2019-08-30 16:11:16.474514",
+>>>>>>> updated reports
  "modified_by": "Administrator",
  "module": "DAS",
  "name": "Movement Register",

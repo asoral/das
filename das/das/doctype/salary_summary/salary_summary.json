@@ -6,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "month",
+  "section_break_2",
   "staff",
   "no_of_staff_cur_mon",
   "no_of_staff_prev_mon",
@@ -19,14 +20,8 @@
   "previous_month_net",
   "section_break_12",
   "staff_ot",
-  "column_break_14",
-  "gross_salary_staff_ot",
   "current_month_staff_ot",
   "previous_month_staff_ot",
-  "column_break_18",
-  "net_salary_staff_ot",
-  "current_month_net_ot",
-  "previous_month_net_ot",
   "section_break_22",
   "operating_engineer",
   "cur_mon_oe",
@@ -41,15 +36,96 @@
   "pre_net_oe",
   "section_break_35",
   "operating_engineer_ot",
-  "column_break_37",
-  "gross_oe_ot",
   "cur_gross_oe_ot",
   "pre_gross_oe_ot",
-  "column_break_41",
-  "net_oe_ot",
-  "cur_net_oe_ot",
-  "pre_net_oe_ot",
-  "section_break_45"
+  "section_break_45",
+  "company_employee",
+  "cur_mon_emp",
+  "pre_mon_emp",
+  "column_break_38",
+  "gross_emp",
+  "cur_gross_emp",
+  "pre_gross_emp",
+  "column_break_42",
+  "net_emp",
+  "cur_net_emp",
+  "pre_net_emp",
+  "column_break_46",
+  "emp_ot",
+  "cur_emp_ot",
+  "pre_emp_ot",
+  "section_break_50",
+  "stt",
+  "cur_mon_stt",
+  "pre_mon_stt",
+  "column_break_54",
+  "gross_stt",
+  "cur_gross_stt",
+  "pre_gross_stt",
+  "column_break_58",
+  "net_stt",
+  "cur_net_stt",
+  "pre_net_stt",
+  "column_break_62",
+  "stt_ot",
+  "cur_stt_ot",
+  "pre_stt_ot",
+  "section_break_66",
+  "boat",
+  "cur_mon_boat",
+  "pre_mon_boat",
+  "column_break_70",
+  "boat_gross",
+  "cur_gross_boat",
+  "pre_gross_boat",
+  "column_break_74",
+  "boat_net",
+  "cur_net_boat",
+  "pre_net_boat",
+  "column_break_78",
+  "boat_ot",
+  "cur_boat_ot",
+  "pre_boat_ot",
+  "section_break_82",
+  "driver",
+  "cur_mon_driver",
+  "pre_mon_driver",
+  "column_break_86",
+  "gross_driver",
+  "cur_gross_driver",
+  "pre_gross_driver",
+  "column_break_90",
+  "net_driver",
+  "cur_net_driver",
+  "pre_net_driver",
+  "column_break_94",
+  "driver_ot",
+  "cur_driver_ot",
+  "pre_driver_ot",
+  "section_break_98",
+  "cook",
+  "cur_mon_cook",
+  "pre_mon_cook",
+  "column_break_102",
+  "gross_cook",
+  "cur_gross_cook",
+  "pre_gross_cook",
+  "column_break_106",
+  "net_cook",
+  "cur_net_cook",
+  "pre_net_cook",
+  "section_break_110",
+  "korean",
+  "cur_korean",
+  "pre_korean",
+  "column_break_114",
+  "gross_korean",
+  "cur_gross_korean",
+  "pre_gross_korean",
+  "column_break_118",
+  "net_korean",
+  "cur_net_korean",
+  "pre_net_korean"
  ],
  "fields": [
   {
@@ -88,12 +164,12 @@
   {
    "fieldname": "current_month_net",
    "fieldtype": "Data",
-   "label": "Current Month net "
+   "label": "Current Month "
   },
   {
    "fieldname": "previous_month_net",
    "fieldtype": "Data",
-   "label": "Previous Month net"
+   "label": "Previous Month"
   },
   {
    "fieldname": "gross_salary",
@@ -107,21 +183,12 @@
   },
   {
    "fieldname": "section_break_12",
-   "fieldtype": "Section Break"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "staff_ot",
    "fieldtype": "Heading",
    "label": "Staff OT"
-  },
-  {
-   "fieldname": "column_break_14",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "gross_salary_staff_ot",
-   "fieldtype": "Heading",
-   "label": "Gross Salary "
   },
   {
    "fieldname": "current_month_staff_ot",
@@ -130,25 +197,6 @@
   },
   {
    "fieldname": "previous_month_staff_ot",
-   "fieldtype": "Data",
-   "label": "Previous Month"
-  },
-  {
-   "fieldname": "column_break_18",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "net_salary_staff_ot",
-   "fieldtype": "Heading",
-   "label": "Net Salary"
-  },
-  {
-   "fieldname": "current_month_net_ot",
-   "fieldtype": "Data",
-   "label": "Current Month"
-  },
-  {
-   "fieldname": "previous_month_net_ot",
    "fieldtype": "Data",
    "label": "Previous Month"
   },
@@ -217,21 +265,12 @@
   },
   {
    "fieldname": "section_break_35",
-   "fieldtype": "Section Break"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "operating_engineer_ot",
    "fieldtype": "Heading",
    "label": "Operating Engineer OT"
-  },
-  {
-   "fieldname": "column_break_37",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "gross_oe_ot",
-   "fieldtype": "Heading",
-   "label": "Gross Salary"
   },
   {
    "fieldname": "cur_gross_oe_ot",
@@ -244,30 +283,429 @@
    "label": "Previous Month"
   },
   {
-   "fieldname": "column_break_41",
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company_employee",
+   "fieldtype": "Heading",
+   "label": "Company Employee"
+  },
+  {
+   "fieldname": "cur_mon_emp",
+   "fieldtype": "Data",
+   "label": "No of Emp Current Month"
+  },
+  {
+   "fieldname": "pre_mon_emp",
+   "fieldtype": "Data",
+   "label": "No of Emp Previous Month"
+  },
+  {
+   "fieldname": "column_break_38",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "net_oe_ot",
+   "fieldname": "gross_emp",
    "fieldtype": "Heading",
-   "label": "Net Salary"
+   "label": "Gross Salary"
   },
   {
-   "fieldname": "cur_net_oe_ot",
+   "fieldname": "cur_gross_emp",
    "fieldtype": "Data",
    "label": "Current Month"
   },
   {
-   "fieldname": "pre_net_oe_ot",
+   "fieldname": "pre_gross_emp",
    "fieldtype": "Data",
    "label": "Previous Month"
   },
   {
-   "fieldname": "section_break_45",
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_emp",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_emp",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_emp",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emp_ot",
+   "fieldtype": "Heading",
+   "label": "Company Employee OT"
+  },
+  {
+   "fieldname": "cur_emp_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_emp_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_50",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stt",
+   "fieldtype": "Heading",
+   "label": "STT"
+  },
+  {
+   "fieldname": "cur_mon_stt",
+   "fieldtype": "Data",
+   "label": "No of STT Current Month"
+  },
+  {
+   "fieldname": "pre_mon_stt",
+   "fieldtype": "Data",
+   "label": "No of STT Previous Month"
+  },
+  {
+   "fieldname": "column_break_54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_stt",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "cur_gross_stt",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_gross_stt",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_stt",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_stt",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_stt",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stt_ot",
+   "fieldtype": "Heading",
+   "label": "STT OT"
+  },
+  {
+   "fieldname": "cur_stt_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_stt_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_66",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "boat",
+   "fieldtype": "Heading",
+   "label": "BOAT"
+  },
+  {
+   "fieldname": "cur_mon_boat",
+   "fieldtype": "Data",
+   "label": "No of BOAT Current Month "
+  },
+  {
+   "fieldname": "pre_mon_boat",
+   "fieldtype": "Data",
+   "label": "No of BOAT Previous Month"
+  },
+  {
+   "fieldname": "column_break_70",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "boat_gross",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "cur_gross_boat",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_gross_boat",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_74",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "boat_net",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_boat",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_boat",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "boat_ot",
+   "fieldtype": "Heading",
+   "label": "BOAT OT"
+  },
+  {
+   "fieldname": "cur_boat_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_boat_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_82",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Heading",
+   "label": "Driver"
+  },
+  {
+   "fieldname": "cur_mon_driver",
+   "fieldtype": "Data",
+   "label": "No of Driver Current Month "
+  },
+  {
+   "fieldname": "pre_mon_driver",
+   "fieldtype": "Data",
+   "label": "No of Driver Previous Month "
+  },
+  {
+   "fieldname": "column_break_86",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_driver",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "cur_gross_driver",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_gross_driver",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_90",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_driver",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_driver",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_driver",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_94",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver_ot",
+   "fieldtype": "Heading",
+   "label": "Driver OT"
+  },
+  {
+   "fieldname": "cur_driver_ot",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_driver_ot",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_98",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cook",
+   "fieldtype": "Heading",
+   "label": "Cook"
+  },
+  {
+   "fieldname": "cur_mon_cook",
+   "fieldtype": "Data",
+   "label": "No of Cook Current Month"
+  },
+  {
+   "fieldname": "pre_mon_cook",
+   "fieldtype": "Data",
+   "label": "No of Cook Previous Month"
+  },
+  {
+   "fieldname": "column_break_102",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_cook",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "cur_gross_cook",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_gross_cook",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_106",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_cook",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_cook",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_cook",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "section_break_110",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "korean",
+   "fieldtype": "Heading",
+   "label": "Korean"
+  },
+  {
+   "fieldname": "cur_korean",
+   "fieldtype": "Data",
+   "label": "No of Korean Current Month"
+  },
+  {
+   "fieldname": "pre_korean",
+   "fieldtype": "Data",
+   "label": "No of Korean Previous Month"
+  },
+  {
+   "fieldname": "column_break_114",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_korean",
+   "fieldtype": "Heading",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "cur_gross_korean",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_gross_korean",
+   "fieldtype": "Data",
+   "label": "Previous Month"
+  },
+  {
+   "fieldname": "column_break_118",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_korean",
+   "fieldtype": "Heading",
+   "label": "Net Salary"
+  },
+  {
+   "fieldname": "cur_net_korean",
+   "fieldtype": "Data",
+   "label": "Current Month"
+  },
+  {
+   "fieldname": "pre_net_korean",
+   "fieldtype": "Data",
+   "label": "Previous Month"
   }
  ],
- "modified": "2019-08-08 22:36:25.590756",
+ "modified": "2019-08-22 18:54:57.126220",
  "modified_by": "Administrator",
  "module": "DAS",
  "name": "Salary Summary",

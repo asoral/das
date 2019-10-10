@@ -103,6 +103,8 @@ doc_events = {
 # 	],
 # 	"daily": [
 # 		"das.tasks.daily"
+        # "das.custom.stt_one_year_alert"
+
 # 	],
 # 	"hourly": [
 # 		"das.tasks.hourly"

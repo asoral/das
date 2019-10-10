@@ -156,16 +156,6 @@ def add_meal_rate(doc,method):
 
 
 
-# def update_cat():
-#     employees = frappe.db.sql("""select name,emp_category from `tabEmployee` where status = 'Active' """,as_dict=True)
-#     for emp in employees:
-#         if frappe.db.exists("Salary Slip",{"employee":emp.name}):
-#             salary_slip = frappe.get_doc("Salary Slip",{"employee":emp.name})
-#             salary_slip.employee_category = emp.emp_category
-#             print salary_slip.employee_name
-#             salary_slip.db_update()
-#             frappe.db.commit()
-            
 
 
 
