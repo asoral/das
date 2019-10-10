@@ -1,0 +1,139 @@
+{
+ "creation": "2019-09-21 11:53:15.697425",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_approver",
+  "department",
+  "location",
+  "designation",
+  "column_break_5",
+  "employee",
+  "emp_category",
+  "choose_multiple_employee",
+  "section_break_9",
+  "from_date",
+  "column_break_11",
+  "to_date",
+  "column_break_13",
+  "shift",
+  "assign",
+  "section_break_16",
+  "shift_assignment_tool_kit"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "emp_category",
+   "fieldtype": "Select",
+   "label": "Emp Category",
+   "options": "\nBOAT\nStaff\nOE\nDriver\nemp\nSTT\nNEEM\nContract\nKorean"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From date"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "options": "Shift Type"
+  },
+  {
+   "fieldname": "assign",
+   "fieldtype": "Button",
+   "label": "Assign"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shift_assignment_tool_kit",
+   "fieldtype": "Table",
+   "label": "Shift Assignment Tool Kit",
+   "options": "Shift Assignment Tool Kit"
+  },
+  {
+   "default": "0",
+   "fieldname": "choose_multiple_employee",
+   "fieldtype": "Check",
+   "label": "Choose Multiple Employee"
+  },
+  {
+   "fieldname": "leave_approver",
+   "fieldtype": "Link",
+   "label": "Leave Approver",
+   "options": "User"
+  }
+ ],
+ "modified": "2019-09-21 15:06:36.362314",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Shift Assignment Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,36 @@
+{
+ "creation": "2019-09-26 14:40:01.466888",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meal_type",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "meal_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Meal Type",
+   "options": "\nTiffen\nLunch\nDinner\nSupper"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-30 17:33:10.557922",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Canteen Info",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

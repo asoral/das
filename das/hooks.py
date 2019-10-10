@@ -78,14 +78,21 @@ doctype_js = {"Appraisal" : "public/js/appraisal.js"}
 # Document Events
 # ---------------
 # Hook on document methods and events
+# on_session_creation = [
+# 	"das.utils.reset_password"
+# ]
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Salary Slip": {
+		"after_insert": "das.custom.add_leave_balance",
+	},
+	"Attendance Request": {
+		"before_submit":"das.custom.cancel_attendance",
+	},
+	"Canteen Checkin":{
+		"after_insert":"das.custom.add_meal_rate",
+	}
+}
 
 # Scheduled Tasks
 # ---------------

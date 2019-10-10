@@ -124,19 +124,37 @@ def make_employee(name):
         # frappe.errprint(emp)
 
      
-	
+def add_leave_balance(doc,method):
+    la = frappe.get_all("Leave Allocation",{ "employee": doc.employee },['total_leaves_allocated','leave_type'])
+    for l in la:
+        if l.leave_type == 'Casual Leave':
+            tla = l.total_leaves_allocated
+            frappe.db.set_value("Salary Slip",doc.name,"cl_balance",tla)
+        if l.leave_type == 'Earned Leave':
+            tla = l.total_leaves_allocated
+            frappe.set_value("Salary Slip",doc.name,"el_balance",tla)
 
+@frappe.whitelist()
+def cancel_attendance(doc,method):
+    query  = """select name from `tabAttendance` where status = 'Absent' and attendance_date  between '%s' and '%s' and employee='%s'"""%(doc.from_date,doc.to_date,doc.employee)
+    attendance = frappe.db.sql(query,as_dict=1)
+    for at in attendance:
+        att = frappe.get_doc("Attendance",at.name)
+        att.cancel()
 
 
 
     
-    
+@frappe.whitelist()
+def add_meal_rate(doc,method):
+    meal = frappe.db.sql("""select meal_type,rate from `tabCanteen Info`""",as_dict=True)
+    for m in meal:
+        if doc.type == m.meal_type:
+            rt = m.rate
+            frappe.set_value("Canteen Checkin",doc.name,"rate",rt) 
 
 
 
-
-
-    
 
 # def update_cat():
 #     employees = frappe.db.sql("""select name,emp_category from `tabEmployee` where status = 'Active' """,as_dict=True)

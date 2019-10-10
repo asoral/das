@@ -1,0 +1,28 @@
+{
+ "add_total_row": 1,
+ "creation": "2019-09-14 15:13:19.454767",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "DAS",
+ "modified": "2019-09-18 21:05:07.093121",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Salary Register - DAS",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Salary Slip",
+ "report_name": "Salary Register - DAS",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "HR Manager"
+  }
+ ]
+}

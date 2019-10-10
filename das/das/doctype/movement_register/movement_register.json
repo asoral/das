@@ -15,20 +15,18 @@
   "section_break_10",
   "employee",
   "employee_name",
+  "designation",
+  "department",
+  "category",
   "column_break_13",
   "approver",
   "approver_name",
   "reason",
-  "employee_details_section",
-  "designation",
-  "department",
-  "category",
   "company_details_section",
   "posting_date",
   "follow_via_email",
   "column_break_27",
   "company",
-  "letter_head",
   "amended_from"
  ],
  "fields": [
@@ -64,18 +62,19 @@
   },
   {
    "fieldname": "from_time",
-   "fieldtype": "Datetime",
+   "fieldtype": "Time",
    "in_list_view": 1,
    "label": "From Time",
    "reqd": 1
   },
   {
    "fieldname": "to_time",
-   "fieldtype": "Datetime",
+   "fieldtype": "Time",
    "label": "To Time",
    "reqd": 1
   },
   {
+   "depends_on": "from_time - to_time",
    "fieldname": "total_permission_hour",
    "fieldtype": "Data",
    "label": "Total Permission Hour"
@@ -103,18 +102,14 @@
   },
   {
    "fieldname": "approver",
-   "fieldtype": "Data",
-   "label": "Approver"
+   "fieldtype": "Link",
+   "label": "Approver",
+   "options": "User"
   },
   {
    "fieldname": "approver_name",
-   "fieldtype": "Data",
+   "fieldtype": "Read Only",
    "label": "Approver Name"
-  },
-  {
-   "fieldname": "employee_details_section",
-   "fieldtype": "Section Break",
-   "label": "Employee Details"
   },
   {
    "fetch_from": "employee.department",
@@ -152,14 +147,10 @@
   {
    "fetch_from": "employee.company",
    "fieldname": "company",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Company",
+   "options": "Company",
    "reqd": 1
-  },
-  {
-   "fieldname": "letter_head",
-   "fieldtype": "Data",
-   "label": "Letter Head"
   },
   {
    "fieldname": "amended_from",
@@ -179,7 +170,7 @@
    "reqd": 1
   }
  ],
- "modified": "2019-08-21 19:05:00.802148",
+ "modified": "2019-09-27 11:48:07.402823",
  "modified_by": "Administrator",
  "module": "DAS",
  "name": "Movement Register",
@@ -200,5 +191,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "employee_name",
  "track_changes": 1
 }
