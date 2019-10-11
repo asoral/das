@@ -33,14 +33,15 @@ def get_columns():
 
 def get_openings(conditions,filters):
     opening = 0
-    query = """select count(name) as count from tabEmployee where status = 'Active' and date_of_joining < '%s' or relieving_date < '%s' %s""" % (filters.from_date,filters.from_date,conditions)
+    query = """select count(name) as count,department from tabEmployee where status = 'Active' and date_of_joining < '%s' or relieving_date < '%s' %s group by department""" % (filters.from_date,filters.from_date,conditions)
     openings = frappe.db.sql(query, as_dict=1)
+    frappe.errprint(openings)
     for o in openings:
         opening = o.count
     return opening
 
 def get_additions(conditions,filters):
-    opening = 0
+    addition = 0
     query = """select count(name) as count from tabEmployee where status = 'Active' and date_of_joining between '%s' and '%s' %s""" % (filters.from_date,filters.to_date,conditions)
     additions = frappe.db.sql(query, as_dict=1)
     for a in additions:
@@ -48,7 +49,7 @@ def get_additions(conditions,filters):
     return addition
 
 def get_lefts(conditions,filters):
-    opening = 0
+    left = 0
     query = """select count(name) as count from tabEmployee where status = 'Left' and relieving_date between '%s' and '%s' %s""" % (filters.from_date,filters.to_date,conditions)
     lefts = frappe.db.sql(query, as_dict=1)
     for l in lefts:

@@ -8,10 +8,10 @@
   "employee",
   "employee_name",
   "designation",
-  "department",
-  "column_break_4",
   "start_date",
   "end_date",
+  "column_break_4",
+  "department",
   "doj",
   "petrol_conveyance",
   "section_break_8",
@@ -82,7 +82,7 @@
    "label": "End Date"
   }
  ],
- "modified": "2019-08-27 12:44:27.178446",
+ "modified": "2019-10-11 13:48:26.111832",
  "modified_by": "Administrator",
  "module": "DAS",
  "name": "Petrol Conveyance",

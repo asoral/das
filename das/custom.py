@@ -153,6 +153,10 @@ def add_meal_rate(doc,method):
             rt = m.rate
             frappe.set_value("Canteen Checkin",doc.name,"rate",rt) 
 
+# @frappe.whitelist()
+# def automark_lop():
+
+
 
 
 

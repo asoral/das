@@ -97,7 +97,7 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"das.tasks.all"
 # 	],
@@ -112,10 +112,12 @@ doc_events = {
 # 	"weekly": [
 # 		"das.tasks.weekly"
 # 	]
-# 	"monthly": [
-# 		"das.tasks.monthly"
-# 	]
-# }
+	"monthly": [
+		# "das.tasks.monthly",
+		"das.das.doctype.petrol_conveyance.petrol_conveyance.create_petrol_allowance"
+
+	]
+}
 
 # Testing
 # -------

@@ -1,0 +1,35 @@
+{
+ "add_total_row": 0,
+ "creation": "2019-10-11 14:35:58.209453",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "DAS",
+ "modified": "2019-10-11 16:03:23.031705",
+ "modified_by": "Administrator",
+ "module": "DAS",
+ "name": "Test Head Count Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\ne.department as \"Department:Link/Department:200\",\ne.emp_category as \"Category::200\",\ncount(e.name) as \"Count::100\",\n(select count(*) from tabEmployee where status = 'Active' and date_of_joining between %(from_date)s and %(to_date)s and `tabEmployee`.department = e.department) as \"Additions::100\",\n(select count(*) from tabEmployee where status = 'Active' and relieving_date between %(from_date)s and %(to_date)s and `tabEmployee`.department = e.department) as \"Left::100\"\nFROM \n `tabEmployee` e\nWHERE\n e.status = 'Active'\nGROUP BY\n e.department,e.emp_category",
+ "ref_doctype": "Employee",
+ "report_name": "Test Head Count Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "VMS Admin"
+  }
+ ]
+}
